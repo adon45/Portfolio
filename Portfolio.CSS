@@ -183,16 +183,16 @@ img {
   margin-bottom: 6rem;
 }
 
+
+
 .project {
-  background: var(--dark);
+  display: block; /* Ensure anchor tags are displayed as block elements */
+  height: 400px; /* Set a fixed height for the anchor tags */
+  margin-bottom: 4rem; /* Adjust margin as needed */
+  background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
-}
-
-.project-preview {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
+  background-color: var(--dark);
 }
 
 .project-title {
@@ -200,8 +200,20 @@ img {
   padding: 2rem 0.5rem;
   text-decoration: none;
   color: var(--white);
+  background-color: var(--dark);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+.project-preview {
+  height: 100%; /* Ensure image fills the anchor tag */
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.center {
+  object-position: center;
+}
 a {
   text-decoration: none;
 }
@@ -237,5 +249,3 @@ a {
   margin: 0 15%;
   padding-top: 5%
 }
-
-
