@@ -43,7 +43,7 @@ img {
 /*welcome section*/
 
  .welcome-section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: var(--gray);
   display: flex;
@@ -124,26 +124,30 @@ img {
 /*Nav-Bar*/ 
 
 #nav-bar {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   display: grid;
   background-color: var(--orange);
   color: var(--gray);
   position: fixed;
   top: 0;
+  padding-right: 20px;
+  z-index: 1;
 }
 
 .nav {
   width: 20%;
+  min-width: 350px;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   align-items: center;
   justify-self: end;
   font-size: 1.5em;
   font-weight: 800;
+  flex-shrink: 0;
 }
 
 .nav-link {
@@ -245,7 +249,62 @@ a {
 
 .contact-me {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 15%;
-  padding-top: 5%
+  padding-top: 5%;
+  flex-wrap: wrap;
+  height: auto;
+  flex-shrink: 0;
 }
+
+.fa {
+  margin: 10px 20px;
+}
+
+/* Responsive test */
+
+/* Ensure proper scaling and rendering on mobile devices */
+meta[name="viewport"] {
+  width: device-width;
+  initial-scale: 1.0;
+}
+
+/* Adjust layout and font sizes for small devices (phones) */
+@media (max-width: 576px) {
+  /* Example: adjust font size for readability */
+  body {
+    font-size: 16px; /* Adjust as needed */
+  }
+}
+
+/* Adjust layout for medium devices (tablets) */
+@media (min-width: 768px) {
+  /* Example: adjust layout to accommodate larger screens */
+  .container {
+    max-width: 768px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+  }
+}
+
+/* Adjust layout for large devices (desktops) */
+@media (min-width: 992px) {
+  /* Example: adjust layout for wider screens */
+  .container {
+    max-width: 992px; /* Adjust as needed */
+  }
+}
+
+/* Adjust layout for extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  /* Example: adjust layout for even wider screens */
+  .container {
+    max-width: 1200px; /* Adjust as needed */
+  }
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%; /* Ensure images don't overflow their containers */
+  height: auto; /* Maintain aspect ratio */
+}
+
