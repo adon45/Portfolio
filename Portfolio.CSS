@@ -165,19 +165,19 @@ img {
 }
 
 /*Proect Section*/
-.project-area {
+#project-area {
   text-align: center;
   padding: 10rem 2rem;
   background: var(--blue);
 }
 
-.project-head{
+#project-head{
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--white);
 }
 
-.project-grid {
+#project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
@@ -247,7 +247,7 @@ a {
   font-style: italic;
 }
 
-.contact-me {
+#contact-me {
   display: flex;
   justify-content: space-around;
   margin: 0 15%;
@@ -257,6 +257,11 @@ a {
   flex-shrink: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit
+}
+
 .fa {
   margin: 10px 20px;
 }
@@ -264,10 +269,7 @@ a {
 /* Responsive test */
 
 /* Ensure proper scaling and rendering on mobile devices */
-meta[name="viewport"] {
-  width: device-width;
-  initial-scale: 1.0;
-}
+
 
 /* Adjust layout and font sizes for small devices (phones) */
 @media (max-width: 576px) {
@@ -307,4 +309,3 @@ img {
   max-width: 100%; /* Ensure images don't overflow their containers */
   height: auto; /* Maintain aspect ratio */
 }
-
