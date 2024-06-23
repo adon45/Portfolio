@@ -9,6 +9,11 @@ const projects = [
     title: 'Personal Portfolio',
     link: "https://adon45.github.io/Portfolio/",
     img: "Portfolio Preview.png",
+  },
+  {
+    title: 'Box Loading Timer',
+    link: "https://adon45.github.io/HH-Interaction-Timer/",
+    img: "Screenshot 2024-06-23 005132.png",
   }
 ];
 
